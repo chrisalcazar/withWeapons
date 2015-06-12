@@ -104,7 +104,7 @@ public class MainActivity extends FragmentActivity {
     private class MyPagerAdapter extends FragmentPagerAdapter {
 
         // Set titles for tabs
-        private String tabtitles[] = new String[] {"Character Screen", "Fight Here! :)", "Character Current Equipment", "Equip Here"};
+        private String tabtitles[] = new String[] {"Character Screen", "Fight Here! :)", "Character Current Equipment", "Equip Here!"};
 
         // If you add a new tab, must change this variable
         private static final int NUMBER_OF_TABS = 4;

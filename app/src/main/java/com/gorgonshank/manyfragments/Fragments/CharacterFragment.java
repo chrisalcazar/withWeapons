@@ -22,8 +22,9 @@ public class CharacterFragment extends Fragment implements Hideable {
 
     private static final String TAG = "CharacterFragment";
 
-    private TextView characterName, characterHP;
-    private ImageView characterPortrait;
+    private TextView characterName, characterHP,characterArmor,characterGloves,characterShoes,
+            characterShield,characterWeapon,characterAttack,characterDefense;
+    private ImageView characterPortrait,iArmor,iGloves,iShoes,iWeapon;
     private MediaPlayer mp;
     private CheckBox check;
 
@@ -41,6 +42,30 @@ public class CharacterFragment extends Fragment implements Hideable {
 
         characterPortrait = (ImageView) v.findViewById(R.id.characterPortrait);
         characterPortrait.setImageResource(R.drawable.fighter);
+
+        characterArmor=(TextView)v.findViewById(R.id.character_armor);
+        characterGloves=(TextView)v.findViewById(R.id.character_gloves);
+        characterShoes=(TextView)v.findViewById(R.id.character_shoes);
+        characterWeapon=(TextView)v.findViewById(R.id.character_weapon);
+        characterAttack=(TextView)v.findViewById(R.id.character_attack);
+        characterDefense=(TextView)v.findViewById(R.id.character_defense);
+        iArmor=(ImageView)v.findViewById(R.id.iArmor);
+        iGloves=(ImageView)v.findViewById(R.id.iGloves);
+        iShoes=(ImageView)v.findViewById(R.id.iShoes);
+        iWeapon=(ImageView)v.findViewById(R.id.iWeapon);
+
+        characterArmor.setText("Armor: "+CharacterData.getArmor().toString());
+        iArmor.setImageDrawable(CharacterData.getArmor().getDrawable());
+        characterGloves.setText("Gloves: "+CharacterData.getGloves().toString());
+        iGloves.setImageDrawable(CharacterData.getGloves().getDrawable());
+        characterShoes.setText("Shoes: "+CharacterData.getShoes().toString());
+        iShoes.setImageDrawable(CharacterData.getShoes().getDrawable());
+        characterWeapon.setText("Weapon: "+CharacterData.getWeapon1().toString());
+        iWeapon.setImageDrawable(CharacterData.getWeapon1().getDrawable());
+        characterAttack.setText("Attack: "+CharacterData.getAttack()+"");
+        characterDefense.setText("Defense: "+CharacterData.getDefense()+"");
+
+
 
         Button add = (Button) v.findViewById(R.id.increase_hit_points_button);
         add.setOnClickListener(new View.OnClickListener() {
