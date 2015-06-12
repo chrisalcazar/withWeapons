@@ -41,7 +41,7 @@ public class MainActivity extends FragmentActivity {
 
         ViewPager pager = (ViewPager) findViewById(R.id.viewPager);
         pager.setPageTransformer(true, new ZoomOutPageTransformer());
-        pager.setOffscreenPageLimit(2);
+        pager.setOffscreenPageLimit(4);
         pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
     }
 
@@ -119,8 +119,8 @@ public class MainActivity extends FragmentActivity {
             switch(pos) {
                 case 0: return CharacterFragment.newInstance("Character Fragment1");
                 case 1: return BarcodeFragment.newInstance("BarcodeFragment");
-                case 2: return CharacterEquipmentFragment.newInstance("Character Equipment");
-                case 3: return EquippedFragment.newInstance("Equipped Fragment");
+                case 2: return EquippedFragment.newInstance("Character Equipment");
+                case 3: return CharacterEquipmentFragment.newInstance("Equipped Fragment");
 
 
                 default: return ThirdFragment.newInstance("ThirdFragment, Default");

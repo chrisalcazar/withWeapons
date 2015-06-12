@@ -146,7 +146,7 @@ public class CharacterEquipmentFragment extends Fragment {
             @Override
             public void onClick(View v)
             {
-                Integer test = 2;
+                /*Integer test = 2;
                 ImageButton ar1 = (ImageButton)v;
                 if(test==1){
                 if(ta1.getVisibility()==View.GONE) {
@@ -157,14 +157,22 @@ public class CharacterEquipmentFragment extends Fragment {
                     ea1.setVisibility(View.GONE);
                 }}else{
                     Toast.makeText(getActivity(), "Not in inventory", Toast.LENGTH_LONG ).show();
+                }*/
+                if(ta1.getVisibility()==View.GONE) {
+                    ta1.setVisibility(View.VISIBLE);
+                    ea1.setVisibility(View.VISIBLE);
+                }else{
+                    ta1.setVisibility(View.GONE);
+                    ea1.setVisibility(View.GONE);
                 }
+
             }
         });
         ar2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                ImageButton ar1 = (ImageButton)v;
+
                 if(ta2.getVisibility()==View.GONE) {
                     ta2.setVisibility(View.VISIBLE);
                     ea2.setVisibility(View.VISIBLE);
@@ -666,6 +674,135 @@ public class CharacterEquipmentFragment extends Fragment {
                 }
             }
         });
+
+        //placeholder for equipping stuff
+        eaxe1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        eaxe2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        eaxe3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        ebow1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        ebow2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        ebow3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        edagger1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        edagger2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        edagger3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        emace1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        emace2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        emace3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        espear1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        espear2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        espear3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        esword1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        esword2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        esword3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        esword4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        esword5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+        esword6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+            }
+        });
+
 
         return v;
     }
